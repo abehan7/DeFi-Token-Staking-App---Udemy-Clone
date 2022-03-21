@@ -2,7 +2,7 @@ pragma solidity ^0.5.0;
 
 contract Tether {
     string public name = "Mock Tether Token";
-    string public symbol = "mUSDT";
+    string public symbol = "USDT";
     uint256 public totalSupply = 1000000000000000000; //1 million tokens
     uint8 public decimals = 18;
 
@@ -49,7 +49,7 @@ contract Tether {
         returns (bool success)
     {
         // check if the spender is the same as the owner
-        require(_spender != msg.sender);
+        // require(_spender != msg.sender);
         // check if the value is greater or equal for transfer
         require(balances[msg.sender] >= _value);
         // set the allowance to the spender

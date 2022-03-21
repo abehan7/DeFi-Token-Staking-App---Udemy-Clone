@@ -2,3 +2,5 @@ truffle migrate --reset
 truffle console
 truffle compile
 truffle migrate
+
+accounts = await web3.eth.getAccounts()

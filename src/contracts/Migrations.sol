@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: MIT
 pragma solidity ^0.5.0;
 
 contract Migrations {
@@ -11,6 +10,7 @@ contract Migrations {
 
     modifier restricted() {
         // Only the owner can call this modifier
+        require(msg.sender == owner);
         if (msg.sender == owner) _;
     }
 
