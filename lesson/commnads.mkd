@@ -1,0 +1,4 @@
+truffle migrate --reset
+truffle console
+truffle compile
+truffle migrate
